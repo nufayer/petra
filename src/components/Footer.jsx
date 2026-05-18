@@ -7,7 +7,7 @@ const Footer = () => {
             Petra
           </h1>
           <p className="mt-4 max-w-xl">
-            Your gateway to extraordinary travel experiences around the world.
+            Your gateway to extraordinary pet experiences.
           </p>
         </div>
 
@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <h3 className="text-white mb-3 tracking-wide">NEWSLETTER</h3>
             <p className="mb-4 text-sm">
-              Subscribe for exclusive travel deals and inspiration.
+              Subscribe for pet adoption and inspiration.
             </p>
 
             <div className="flex items-center bg-gray-800 px-4 py-3">
@@ -60,7 +60,7 @@ const Footer = () => {
             <h3 className="text-white mb-3 tracking-wide">CONTACT US</h3>
             <ul className="space-y-2">
               <li>786 901 1622</li>
-              <li>info@wandarland.com</li>
+              <li>info@petra.com</li>
             </ul>
           </div>
         </div>
@@ -68,7 +68,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-800 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm">
-            © 2026 Wanderlust. All rights reserved.
+            © 2026 Petra. All rights reserved.
           </p>
 
           <div className="flex gap-5 mt-4 md:mt-0 text-white text-lg">

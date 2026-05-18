@@ -5,7 +5,7 @@ const Banner = () => {
     <div className="bg-[url('/assets/banner.JPG')] text-white  flex justify-between flex-col items-center  gap-5 h-185 w-full">
       <div className="p-10 text-center flex justify-center flex-col items-center gap-3.5 flex-1">
         <h1 className="text-7xl">
-          Discover Your <br /> Next Adventure
+          Adopt Your <br /> Next Pet
         </h1>
 
         <p className="text-2xl">
@@ -14,12 +14,12 @@ const Banner = () => {
         </p>
 
         <div className="flex gap-5">
-          <button className="uppercase bg-cyan-500 px-5 py-3 cursor-pointer">
+          <button className="uppercase bg-blue-500 px-5 py-3 cursor-pointer">
             Explore Now
           </button>
 
           <button className="uppercase px-5 py-3 bg-white/50 cursor-pointer">
-            View Destination
+            View Pets
           </button>
         </div>
       </div>
