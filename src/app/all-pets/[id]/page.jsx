@@ -1,3 +1,5 @@
+import { DeleteAlert } from '@/components/DeleteAlert';
+import { EditModal } from '@/components/EditModal';
 import { Button } from '@heroui/react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -15,6 +17,10 @@ const PetDeatils = async ({params}) => {
    console.log(pet);
     return (
         <div className='max-w-7xl mx-auto'>
+        <div className='flex justify-end gap-3'>
+            <EditModal pet={pet} />
+            <DeleteAlert _id={pet._id} />
+        </div>    
             <Image
             alt={petName}
             src={imageUrl}
