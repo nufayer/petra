@@ -4,9 +4,30 @@ import { FieldError, Input, Label, TextField, Select, ListBox, TextArea, Button 
 import React, { use } from 'react';
 
 const AddPetPage = () => {
+    const onSubmit = async (e) => {
+        e.preventDefault()
+        const formData = new FormData(e.currentTarget);
+        const pet = Object.fromEntries(formData.entries());
+
+        console.log(pet);
+
+        const res = await fetch('http://localhost:5000/pet',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(pet)
+        })
+
+        const data = await res.json();
+
+        console.log(data);
+        // Handle form submission logic here
+    }
     return (
         <div>
             <form
+            onSubmit={onSubmit}
             className="p-10 space-y-8"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -81,7 +102,7 @@ const AddPetPage = () => {
 
               {/* Adoption Fee */}
               <TextField name="adoptionFee" type="number" isRequired>
-                <Label>Adoption Fee (USD)</Label>
+                <Label>Adoption Fee (BDT)</Label>
                 <Input
                   type="number"
                   placeholder="100"
