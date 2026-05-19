@@ -1,7 +1,9 @@
+import { Button } from "@heroui/react";
 import Image from "next/image";
+import Link from "next/link";
 
 const PetCard = ({ pet }) => {
-    const {imageUrl, petName, species, location, adoptionFee} = pet;
+    const {_id, imageUrl, petName, species, location, adoptionFee} = pet;
     
     return (
         <div className="">
@@ -19,6 +21,9 @@ const PetCard = ({ pet }) => {
                 <div>{location}</div>
                 <div>Adoption Fee: BDT{adoptionFee}</div>
             </div>
+            <Link href={`/all-pets/${_id}`} className="text-blue-500 hover:underline">
+                <Button className={'mt-1'}>Adopt Now</Button>
+            </Link>
         </div>
     );
 };

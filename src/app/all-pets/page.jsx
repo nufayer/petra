@@ -7,7 +7,7 @@ const AllPetPage = async () => {
     console.log(pets);
     return (
         <div className="max-w-7xl mx-auto">
-            <h1>All Pets</h1>
+            <h1 className="text-3xl font-bold my-5">All Pets</h1>
 
             <div className="grid grid-cols-4 gap-5">
                 { 
