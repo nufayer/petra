@@ -1,6 +1,6 @@
 "use client";
 
-
+import { FcGoogle } from "react-icons/fc";
 import { authClient } from '@/lib/auth-client';
 import {
   Button,
@@ -41,6 +41,12 @@ const SignUpPage = () => {
       alert("Couldn't create account: " + error.message);
     }
   };
+
+  const handleGoogleSignIn = async () => {
+    await authClient.signIn.social({
+      provider: "google"
+    })
+  }
 
   return (
         <div className='mx-auto my-7'>
@@ -117,8 +123,8 @@ const SignUpPage = () => {
     </Form>
     <div className='text-center'>Or Continue With</div>
     <div>
-      <Button variant='outline' className={'w-full rounded-none '}>
-        Sign in with Google
+      <Button onClick={handleGoogleSignIn} variant='outline' className={'w-full rounded-none '}>
+       <FcGoogle /> Sign in with Google
       </Button>
     </div>
             </Card>
