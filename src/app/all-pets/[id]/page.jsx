@@ -1,3 +1,4 @@
+import AdoptCard from '@/components/AdoptCard';
 import { DeleteAlert } from '@/components/DeleteAlert';
 import { EditModal } from '@/components/EditModal';
 import { Button } from '@heroui/react';
@@ -29,6 +30,7 @@ const PetDeatils = async ({params}) => {
             className="rounded-2xl object-cover"
             />
 
+            <div className='flex justify-baseline'>
             <div className="p-3">
                 <div className="flex items-center gap-2"><h2 className="font-bold">Name: {petName}</h2></div>
                 <div>{species}</div>
@@ -41,6 +43,11 @@ const PetDeatils = async ({params}) => {
                 <div>Description: {description}</div>
                 <div>Adoption Fee: BDT{adoptionFee}</div>
                 <div>Contact Owner: {ownerEmail}</div>
+            </div>
+
+                <div className='p-2'>
+                <AdoptCard pet={pet}/>
+                </div>
             </div>
         </div>
     );
