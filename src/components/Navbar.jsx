@@ -6,11 +6,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const Navbar = () => {
-
-    const { 
-        data: session, 
-    } = authClient.useSession() 
-
+    const { data: session, } = authClient.useSession() 
     const user = session?.user;
     console.log({user});
 

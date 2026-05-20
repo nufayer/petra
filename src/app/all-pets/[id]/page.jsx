@@ -30,7 +30,7 @@ const PetDeatils = async ({params}) => {
             className="rounded-2xl object-cover"
             />
 
-            <div className='flex justify-baseline'>
+            <div className='flex justify-between items-start gap-5 mt-5'>
             <div className="p-3">
                 <div className="flex items-center gap-2"><h2 className="font-bold">Name: {petName}</h2></div>
                 <div>{species}</div>
