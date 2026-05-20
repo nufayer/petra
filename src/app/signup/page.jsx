@@ -1,5 +1,6 @@
 "use client";
 
+
 import { authClient } from '@/lib/auth-client';
 import {
   Button,
@@ -109,11 +110,17 @@ const SignUpPage = () => {
         <FieldError />
       </TextField>
       <div className="flex justify-center gap-2">
-        <Button w-full type="submit">
+        <Button className={'w-full rounded-none'} type="submit">
           Create Account
         </Button>
       </div>
     </Form>
+    <div className='text-center'>Or Continue With</div>
+    <div>
+      <Button variant='outline' className={'w-full rounded-none '}>
+        Sign in with Google
+      </Button>
+    </div>
             </Card>
         </div>
     );
