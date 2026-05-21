@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div
   className="w-full min-h-[60vh] md:min-h-[80vh] lg:min-h-[80vh]
-  bg-[url('/assets/banner.JPG')] bg-cover bg-center bg-no-repeat
+  bg-[url('/assets/Banner.jpg')] bg-cover bg-center bg-no-repeat
   text-white flex flex-col justify-center items-center gap-5 px-4"
 >
       <div className="p-10 text-center flex justify-center flex-col items-center gap-3.5 flex-1">

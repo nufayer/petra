@@ -5,7 +5,7 @@ import {AlertDialog, Button} from "@heroui/react";
 export function AdoptionCancelAlert({adoptionId}) {
 
     const handleCancelAdoption = async () => {
-        const res = await fetch(`http://localhost:5000/adoption/${adoptionId}`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/adoption/${adoptionId}`, {
             method: 'DELETE',       
         headers: {
             'Content-Type': 'application/json'

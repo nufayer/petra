@@ -30,7 +30,7 @@ const AdoptCard = ({ pet }) => {
         }; // Handle adoption logic
         // 
         
-        const res = await fetch('http://localhost:5000/adoption',{
+        const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/adoption`,{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

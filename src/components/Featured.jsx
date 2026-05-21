@@ -1,7 +1,7 @@
 import PetCard from "@/components/PetCard";
 
 const Featured = async () => {
-    const res = await fetch("http://localhost:5000/featured" );
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/featured`);
     const featuredPets = await res.json();
     console.log({featuredPets})
     return (

@@ -13,7 +13,7 @@ const MyAdoptionPage = async () => {
 const user = session?.user;
 
 console.log(user);
-const res = await fetch(`http://localhost:5000/adoption/${user?.id}`);
+const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/adoption/${user?.id}`);
 
 const adoptions = await res.json();
 console.log(adoptions);

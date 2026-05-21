@@ -9,7 +9,7 @@ import React from 'react';
 const PetDetails = async ({params}) => {
     const {id} = await params;
 
-    const res = await fetch(`http://localhost:5000/pet/${id}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/pet/${id}`, {
         headers: {
             authorization: "logged in"
         }
