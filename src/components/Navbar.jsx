@@ -24,7 +24,7 @@ const Navbar = () => {
             </ul>
 
             <div>
-                <h2 className='font-bold text-4xl text-blue-500'>Petra</h2>
+                <h2 className='font-bold text-4xl text-blue-500'>PetRa</h2>
             </div>
 
             <ul className='flex items-center gap-4 font-bold text-gray-700'>

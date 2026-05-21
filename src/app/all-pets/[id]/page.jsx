@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const PetDeatils = async ({params}) => {
+const PetDetails = async ({params}) => {
     const {id} = await params;
 
     const res = await fetch(`http://localhost:5000/pet/${id}`, {
@@ -57,4 +57,4 @@ const PetDeatils = async ({params}) => {
     );
 };
 
-export default PetDeatils;
+export default PetDetails;
