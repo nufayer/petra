@@ -1,0 +1,18 @@
+[33mccc1661[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m added security for backend
+[33mb2d052a[m secured frontend using proxy
+[33medad9aa[m cancelation from adoption list
+[33m54e327c[m added collection
+[33m24bf1a9[m added adopt card on details page
+[33m620b563[m fixed an completed google signin
+[33m2fc639b[m added google signin
+[33m62299e6[m added login page
+[33m503e73b[m added signup page
+[33m57c8a96[m installed better-auth
+[33me23f86a[m added crud operation
+[33m529fbc0[m added pet details page
+[33m367b20c[m added allpets page
+[33mfd8bd9a[m updated the form
+[33m9292825[m add pet page added
+[33m7e2f008[m made changes on banner and nav dessign
+[33md79e733[m initiated project
+[33mb7ca8e2[m Initial commit from Create Next App
