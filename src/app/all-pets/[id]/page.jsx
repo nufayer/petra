@@ -21,7 +21,7 @@ const PetDetails = async ({params}) => {
     
    console.log(pet);
     return (
-        <div className='max-w-7xl mx-auto'>
+        <div className='max-w-7xl mx-auto '>
         <div className='flex justify-end gap-3'>
             <EditModal pet={pet} />
             <DeleteAlert _id={pet._id} />

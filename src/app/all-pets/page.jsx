@@ -9,7 +9,7 @@ const AllPetPage = async () => {
         <div className="max-w-7xl mx-auto">
             <h1 className="text-3xl font-bold my-5">All Pets</h1>
 
-            <div className="grid grid-cols-4 gap-5">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                 { 
                     pets.map(pet => <PetCard key={pet._id} pet={pet} />)
                 }
