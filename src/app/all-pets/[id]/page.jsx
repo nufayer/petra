@@ -9,7 +9,11 @@ import React from 'react';
 const PetDeatils = async ({params}) => {
     const {id} = await params;
 
-    const res = await fetch(`http://localhost:5000/pet/${id}`);
+    const res = await fetch(`http://localhost:5000/pet/${id}`, {
+        headers: {
+            authorization: "logged in"
+        }
+    });
     const pet = await res.json();
 
     const {imageUrl, petName, species, location, adoptionFee, gender, age, breed, healthStatus, vaccinationStatus, description, ownerEmail} = pet;
