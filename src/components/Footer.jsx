@@ -7,7 +7,7 @@ const Footer = () => {
             Petra
           </h1>
           <p className="mt-4 max-w-xl">
-            Your gateway to extraordinary pet experiences.
+            Discover adorable pets waiting to become part of your family.
           </p>
         </div>
 

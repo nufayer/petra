@@ -2,25 +2,22 @@ import { Separator } from "@heroui/react";
 
 const Banner = () => {
   return (
-    <div className="bg-[url('/assets/banner.JPG')] text-white  flex justify-between flex-col items-center  gap-5 h-185 w-full">
+    <div
+  className="w-full min-h-[60vh] md:min-h-[80vh] lg:min-h-[80vh]
+  bg-[url('/assets/banner.JPG')] bg-cover bg-center bg-no-repeat
+  text-white flex flex-col justify-center items-center gap-5 px-4"
+>
       <div className="p-10 text-center flex justify-center flex-col items-center gap-3.5 flex-1">
         <h1 className="text-7xl">
-          Adopt Your <br /> Next Pet
+          Find Your <br /> Perfect Companion
         </h1>
 
         <p className="text-2xl">
-          Explore breathtaking destinations and create unforgettable memories
-          with our curated travel experiences.
+          Browse loving pets ready for adoption and start your journey together.
         </p>
 
         <div className="flex gap-5">
-          <button className="uppercase bg-blue-500 px-5 py-3 cursor-pointer">
-            Explore Now
-          </button>
-
-          <button className="uppercase px-5 py-3 bg-white/50 cursor-pointer">
-            View Pets
-          </button>
+          
         </div>
       </div>
 
