@@ -12,35 +12,34 @@ const AdoptCard = ({ pet }) => {
         const user = session?.user;
         
 
-    const [adoptionDate, setAdoptionDate, imageURL] = useState(null); 
+    const [adoptionDate, setAdoptionDate, imageUrl] = useState(null); 
     
     const { adoptionFee, _id, petName } = pet;
 
-    const handleAdopt = async () => {
-        const adoptionData = {
-            userId: user?.id,
-            userName: user?.name,
-            userEmail: user?.email,
-            userImage: user?.image,
-            petId: _id,
-            petName: petName,
-            adoptionFee: adoptionFee,
-            adoptionDate: new Date(adoptionDate),
-            imageURL: imageURL,
-        }; // Handle adoption logic
-        // 
-        
-        const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/adoption`,{
+const handleAdopt = async () => {
+    const adoptionData = {
+        userId: user?.id,
+        userName: user?.name,
+        userEmail: user?.email,
+        userImage: user?.image,
+        petId: _id,
+        petName: petName,
+        adoptionFee: adoptionFee,
+        adoptionDate: new Date(adoptionDate),
+        imageUrl: pet.imageUrl, 
+    };
+
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/adoption`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(adoptionData)
-    })
+    });
 
     const data = await res.json();
-    
-    toast.success("Your adoption request has been submitted successfully!")
+
+    toast.success("Your adoption request has been submitted successfully!");
 };
 
            
