@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-black mt-20 text-gray-400 px-6 md:px-16 py-16">
+    <footer className="bg-[#0f172a] mt-20 text-gray-400 px-6 md:px-16 py-16">
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <h1 className="text-6xl md:text-5xl font-bold text-white">
@@ -35,8 +35,8 @@ const Footer = () => {
             <h3 className="text-white mb-3 tracking-wide">QUICK LINKS</h3>
             <ul className="space-y-2">
               <li className="hover:text-white cursor-pointer">Home</li>
-              <li className="hover:text-white cursor-pointer">Destinations</li>
-              <li className="hover:text-white cursor-pointer">My Bookings</li>
+              <li className="hover:text-white cursor-pointer">Pets</li>
+              <li className="hover:text-white cursor-pointer">My Adoptions</li>
               <li className="hover:text-white cursor-pointer">My Profile</li>
             </ul>
           </div>

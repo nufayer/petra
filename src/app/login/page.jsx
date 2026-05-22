@@ -1,6 +1,7 @@
 "use client";
 
 import { FcGoogle } from "react-icons/fc";
+import toast from 'react-hot-toast';
 import { authClient } from '@/lib/auth-client';
 import {
   Button,
@@ -38,7 +39,7 @@ const LoginPage = () => {
     }
 
     if (error) {
-      alert("Couldn't create account: " + error.message);
+      toast.error("Invalid email or password");
     }
   };
 
